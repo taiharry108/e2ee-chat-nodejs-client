@@ -1,0 +1,5 @@
+node_modules/
+
+src/consts.js
+avatars/
+.DS_Store

@@ -1,0 +1,61 @@
+.container-main {
+	position: relative;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+}
+
+.speech-bubble {
+	position: relative;
+	border-radius: .6em;
+  width: inherit;
+  max-width: 80%;
+}
+
+.speech-bubble::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 12px solid transparent;
+	border-bottom: 0;
+	margin-top: -6px;
+}
+
+
+.symbol-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.my-msg {
+  background: #faf292;
+}
+
+.others-msg {
+  background: #fdecff;
+}
+
+.my-msg.b-right::after {
+  border-left-color: #faf292;
+}
+
+.others-msg.b-left::after {
+  border-right-color: #fdecff;
+}
+
+.b-right::after {
+  right: 0;
+  border-right: 0;
+  margin-right: -12px;
+}
+
+.b-left::after {
+  left: 0;
+  border-right-color: #ccf7f5;
+  border-left: 0;
+  margin-left: -12px;
+}
